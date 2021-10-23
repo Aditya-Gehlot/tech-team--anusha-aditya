@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<title> Medical Portal </title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+
+<h1>  Medical Portal   <h1>
+<div class="para">
+   <p>If you are interested in taking consultation at hospital register here.</p>
+</div>
+<div class="form">
+
+   <center>
+      <form>
+      
+      <p>Name</p>
+      <input type="text" placeholder="first name"><input type="text" placeholder="last name">
+      <p>contact details</p>
+       <input type="text" placeholder="contact nu"><input type="text" placeholder="email id"><br>
+       <label for="speciality">Speciality:</label>
+        <select name="speciality" id="speciality">
+       <option value="cardiologist">cardiologist</option>
+       <option value="ENT">ENT</option>
+       <option value="surgeon">surgeon</option>
+       <option value="nuerologist">nuerologist</option>
+       <option value="pediatrician">pediatrician</option>
+       <option value="psychiatrist">psychiatrist</option>
+       <option value="general physician">general physician</option>
+      
+      </select>
+      
+      <p>gender</p>
+      <label for="gendermale">
+         <input type="radio" value="male" name="gender" id="gendermale">male
+      </label>
+      <label for="genderfemale">
+         <input type="radio" value="female" name="gender" id="genderfemale">female
+      </label>
+      <label for="gendertrans">
+         <input type="radio" value="trans" name="gender" id="gendertrans">trans
+      </label><br><br>
+      
+      <label for="agree">
+      <input type="checkbox">i agree all the terms and conditions
+      </label><br>
+      
+      <button type="submit"  size="100" value="Submit">Submit</button>
+      
+      
+      </form>
+   </center>
+
+</div>
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
