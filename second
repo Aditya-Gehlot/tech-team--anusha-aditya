@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apollo</title>
+</head>
+<body>
+    <header>
+        <h1>  Medical Portal   <h1>
+            <div class="para">
+               <p>If you are interested in taking consultation at hospital.
+                   There are top 4 options fro you to book an appointment . 
+               </p>
+            </div>
+    </header>
+    <main>
+        <span class="apollo"><iframe src="https://www.askapollo.com/specialitypages/specialty/gynecology?utm_source=google&utm_medium=search&utm_campaign=TM_Gynecologist_COE_Search&utm_content=coe&utm_source=paid&utm_medium=googleads&utm_campaign=12529447620&utm_adgroup=119614884216&utm_term=gynecologist%20appointment&creative=507042457587&device=c&devicemodel=&matchtype=b&feeditemid=&targetid=kwd-320025204946&network=g&placement=&adposition=&GA_loc_interest_ms=&GA_loc_physical_ms=9298235&gclid=CjwKCAjw5c6LBhBdEiwAP9ejG9NvXFo2dyeu6iC-NxUdQC-wmj8MMDsXyfHL09lvvzEwbZ3FOW4I1RoCBWYQAvD_BwE" style="height:650px;width:auto;" title="Iframe Example"></iframe> </span>
+        <span class="care">
+            <iframe src="https://appointments.carehospitals.com/#/home"style="height:650px;width:auto;"  frameborder="0"></iframe>
+        <span class="medicover">
+            <iframe src="https://www.medicoverhospitals.in/book-an-appointment/" style="height:650px;width:auto;" ></iframe>
+        </span>
+        <span class="citizenshospitals">
+            <iframe src="https://www.citizenshospitals.com/online-doctor-consultation/"style="height:650px;width:auto;"  frameborder="0"></iframe>
+        </span>
+    </main>
+
+</body>
+<style>
+    main{
+        background-color: black;
+    }
+    h1{
+    text-align: center;
+    background-color: rgb(169, 148, 189);
+}
+</style>
+</html>
