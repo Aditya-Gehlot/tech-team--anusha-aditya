@@ -90,5 +90,23 @@
 	}
 	// ]]>
 </script></body>
+<style>
+.form{
+    justify-content:left;
+    background-color: aqua;
+    text-align: left;
+    background-image: url("\https://image.freepik.com/free-photo/medicine-capsules-global-health-with-geometric-pattern-digital-remix_53876-126742.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+h1{
+    text-align: center;
+    background-color: rgb(169, 148, 189);
+}
+.para{
+    background-color: blanchedalmond;
+    text-align: left;
+}
 
+<style>
 </html>
